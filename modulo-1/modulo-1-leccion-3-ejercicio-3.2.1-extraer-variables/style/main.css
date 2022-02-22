@@ -1,0 +1,32 @@
+:root{
+    --brand-color: orange;
+    padding: :20px;
+}
+
+
+body {
+  margin:0;
+}
+
+header{
+  background-color:#eaeaea;
+  padding:20px
+}
+
+main{
+  padding:20px
+}
+
+p{
+  width:50%;
+  font-size: 16px
+}
+
+ul{
+  list-style-type:none;
+  padding:0
+}
+
+.title{
+  color:grey;
+  margin:0

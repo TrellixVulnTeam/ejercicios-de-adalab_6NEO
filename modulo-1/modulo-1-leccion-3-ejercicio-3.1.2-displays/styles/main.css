@@ -1,0 +1,19 @@
+span,
+p {
+  background-color: lightblue;
+}
+.inline-block {
+  display: inline-block;
+}
+div {
+  height: 100px;
+  width: 80em;
+}
+section {
+  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 10px;
+}
