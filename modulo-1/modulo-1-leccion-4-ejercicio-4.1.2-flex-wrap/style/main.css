@@ -1,0 +1,15 @@
+.content {
+  width: 800px;
+  height: 500px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item {
+  width: 200px;
+  height: 100px;
+  color: blueviolet;
+  border: 2px solid black;
+  box-sizing: content-box;
+}

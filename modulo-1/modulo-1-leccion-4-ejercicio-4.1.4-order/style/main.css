@@ -1,0 +1,20 @@
+.content {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main_item {
+  width: 3000px;
+  height: 100px;
+  -ms-flex-order: 0;
+}
+.item {
+  width: 400px;
+  height: 200px;
+}
+.image {
+  height: 80px;
+  width: 80px;
+}
