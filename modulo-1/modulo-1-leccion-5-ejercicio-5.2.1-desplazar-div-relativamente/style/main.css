@@ -1,0 +1,30 @@
+.div_madre {
+  display: flex;
+}
+
+.div_hija {
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  padding: 30px;
+}
+#caja1 {
+  background-color: blue;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+
+#caja2 {
+  background-color: pink;
+  position: relative;
+  right: 150px;
+  bottom: 320px;
+}
+
+#caja3 {
+  background-color: green;
+  position: relative;
+  left: 180px;
+  bottom: 240px;
+}
