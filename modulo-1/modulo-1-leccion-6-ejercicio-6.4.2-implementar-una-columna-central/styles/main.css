@@ -1,0 +1,34 @@
+.container {
+  margin: 0 20px;
+}
+.title {
+  letter-spacing: 24px;
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    margin: 30px 40px 0;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 28px;
+  }
+  .parrag {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media all and (min-width: 1140px) {
+  .container {
+    margin: 190px auto;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 42px;
+  }
+  .parrag {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

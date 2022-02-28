@@ -1,0 +1,29 @@
+.header {
+  background-color: blueviolet;
+  color: solid black;
+  position: absolute;
+  top: 20%;
+}
+.body {
+  background-color: aqua;
+  height: 50%;
+  overflow-y: scroll;
+}
+
+@media all and (min-width: 480px) {
+  .body {
+    background: red;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .body {
+    background: yellow;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .body {
+    background: green;
+  }
+}

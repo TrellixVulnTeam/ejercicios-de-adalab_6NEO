@@ -1,0 +1,28 @@
+.container {
+  margin: 0;
+  background-color: lightgrey;
+}
+
+.header {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.list_links {
+  background-color: greenyellow;
+  position: relative;
+  bottom: 20px;
+}
+.link {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main_parragraph {
+  background-color: yellow;
+}
+
+.footer {
+  background-color: grey;
+}
