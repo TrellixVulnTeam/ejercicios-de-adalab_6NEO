@@ -1,0 +1,39 @@
+$color-primary: #010101;
+$background-color: yellow;
+$main_back_color: lightblue;
+
+body {
+  color: $color-primary; /* Pasar a variable */
+  display: flex;
+  font: 16px arial, sans-serif; /* pasar a dos variables: texto y tamaño de texto */
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: 0 40px;
+}
+.header {
+  background: $background-color; /* Pasar a variable */
+  height: 100px; /* Pasar a variable */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.main {
+  background: $main_back_color; /* Pasar a variable */
+  flex: 1;
+}
+.main__title {
+  color: #fff;
+  font-size: 2.5em;
+}
+.main__content p {
+  font-size: 1.1em;
+  line-height: 140%;
+}
+.footer {
+  background: lightgrey; /* Pasar a variable */
+  height: 100px; /* Pasar a variable */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
