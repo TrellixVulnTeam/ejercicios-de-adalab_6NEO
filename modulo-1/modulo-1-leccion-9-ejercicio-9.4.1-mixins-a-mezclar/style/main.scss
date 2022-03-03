@@ -5,8 +5,8 @@
 }
 
 @mixin colores() {
-  background-color: pink;
-  color: white;
+  background-color: lighten(yellow, 40%);
+  color: blue;
 }
 
 @mixin letras() {
