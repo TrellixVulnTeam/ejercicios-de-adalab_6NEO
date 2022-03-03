@@ -1,0 +1,28 @@
+@mixin caja() {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+@mixin colores() {
+  background-color: pink;
+  color: white;
+}
+
+@mixin letras() {
+  text-transform: uppercase;
+  color: red;
+}
+
+.item {
+  @include caja();
+}
+
+.item_2 {
+  @include colores();
+}
+
+.item_1,
+.item_3 {
+  @include letras();
+}
