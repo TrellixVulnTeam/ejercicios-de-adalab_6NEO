@@ -1,0 +1,30 @@
+.header {
+  background-color: yellow;
+  height: 75px;
+  @media all and (min-width: 768px) {
+    background-color: blue;
+    height: 100px;
+  }
+  @media all and (min-width: 1280px) {
+    background-color: pink;
+    height: 110px;
+  }
+}
+.main_secondary {
+  background-color: orange;
+  height: 80px;
+  &--title {
+    color: white;
+  }
+  &--button {
+    background-color: purple;
+  }
+  @media all and (min-width: 768px) {
+    background-color: green;
+    height: 90px;
+  }
+  @media all and (min-width: 1280px) {
+    background-color: aqua;
+    height: 120px;
+  }
+}

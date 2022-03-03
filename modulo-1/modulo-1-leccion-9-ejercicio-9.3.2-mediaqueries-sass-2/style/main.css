@@ -1,0 +1,46 @@
+.header {
+  background-color: yellow;
+  height: 75px;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    background-color: blue;
+    height: 100px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .header {
+    background-color: pink;
+    height: 110px;
+  }
+}
+
+.main_secondary {
+  background-color: orange;
+  height: 80px;
+}
+
+.main_secondary--title {
+  color: white;
+}
+
+.main_secondary--button {
+  background-color: purple;
+}
+
+@media all and (min-width: 768px) {
+  .main_secondary {
+    background-color: green;
+    height: 90px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .main_secondary {
+    background-color: aqua;
+    height: 120px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
