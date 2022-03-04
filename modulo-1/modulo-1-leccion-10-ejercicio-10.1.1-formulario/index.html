@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Primer formulario</title>
+  </head>
+  <body>
+    <header>Este es un formulario oficial</header>
+    <main class="form">
+      <!--si en method ponemos "get" aparecen todos los datos en la linea del navegador// 
+            con "post" toda la información sensible queda oculta-->
+      <form action="https://adalab-server-form.herokuapp.com/" method="post">
+        <label for="firstname">Nombre</label>
+        <input
+          class="inputs"
+          placeholder="Nombre"
+          id="firstname"
+          type="text"
+          name="firstname"
+        />
+
+        <label class="inputs" for="secondname">Apellidos</label>
+        <input
+          placeholder="Apellidos"
+          id="secondname"
+          type="text"
+          name="secondname"
+        />
+
+        <label class="inputs" for="email">Correo electrónico</label>
+        <input type="email" placeholder="Email" id="email" name="email" />
+
+        <label class="inputs" for="street">Calle</label>
+        <input type="text" id="street" placeholder="Calle" name="street" />
+
+        <label class="inputs" for="city">Ciudad</label>
+        <input type="text" id="city" placeholder="Ciudad" name="city" />
+
+        <label class="inputs" for="provincia">Provincia</label>
+        <input
+          type="text"
+          id="provincia"
+          placeholder="Provincia"
+          name="provincia"
+        />
+
+        <label class="inputs" for="country">País</label>
+        <input type="text" id="country" placeholder="País" name="country" />
+
+        <label class="inputs" for="ID">DNI</label>
+        <input type="text" id="ID" placeholder="DNI" name="ID" />
+
+        <label class="inputs" for="telephone">Teléfono</label>
+        <input
+          type="tel"
+          id="telephone"
+          placeholder="Teléfono"
+          name="telephone"
+        />
+
+        <label class="inputs" for="password">Contraseña</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Contraseña"
+          name="password"
+        />
+
+        <label class="inputs" for="confirmPassword">Confirmar contraseña</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirmar contraseña"
+        />
+
+        <input class="inputs" type="submit" value="Enviar formulario" />
+      </form>
+    </main>
+  </body>
+</html>
