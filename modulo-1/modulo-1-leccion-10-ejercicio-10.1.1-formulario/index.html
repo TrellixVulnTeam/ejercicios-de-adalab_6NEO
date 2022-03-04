@@ -20,6 +20,7 @@
           id="firstname"
           type="text"
           name="firstname"
+          required
         />
 
         <label class="inputs" for="secondname">Apellidos</label>
@@ -29,15 +30,33 @@
           type="text"
           name="secondname"
         />
-
         <label class="inputs" for="email">Correo electrónico</label>
-        <input type="email" placeholder="Email" id="email" name="email" />
+        <input
+          type="email"
+          placeholder="Email"
+          id="email"
+          name="email"
+          required
+        />
 
         <label class="inputs" for="street">Calle</label>
-        <input type="text" id="street" placeholder="Calle" name="street" />
+        <input
+          type="text"
+          id="street"
+          placeholder="Calle"
+          name="street"
+          required
+        />
 
         <label class="inputs" for="city">Ciudad</label>
-        <input type="text" id="city" placeholder="Ciudad" name="city" />
+        <input
+          type="text"
+          id="city"
+          placeholder="Ciudad"
+          name="city"
+          value="Madrid"
+          required
+        />
 
         <label class="inputs" for="provincia">Provincia</label>
         <input
@@ -45,13 +64,21 @@
           id="provincia"
           placeholder="Provincia"
           name="provincia"
+          required
         />
 
         <label class="inputs" for="country">País</label>
-        <input type="text" id="country" placeholder="País" name="country" />
+        <input
+          type="text"
+          id="country"
+          placeholder="País"
+          name="country"
+          value="España"
+          required
+        />
 
         <label class="inputs" for="ID">DNI</label>
-        <input type="text" id="ID" placeholder="DNI" name="ID" />
+        <input type="text" id="ID" placeholder="DNI" name="ID" required />
 
         <label class="inputs" for="telephone">Teléfono</label>
         <input
@@ -59,6 +86,7 @@
           id="telephone"
           placeholder="Teléfono"
           name="telephone"
+          required
         />
 
         <label class="inputs" for="password">Contraseña</label>
@@ -67,6 +95,7 @@
           id="password"
           placeholder="Contraseña"
           name="password"
+          required
         />
 
         <label class="inputs" for="confirmPassword">Confirmar contraseña</label>
@@ -74,6 +103,7 @@
           type="password"
           id="confirmPassword"
           placeholder="Confirmar contraseña"
+          required
         />
 
         <input class="inputs" type="submit" value="Enviar formulario" />
