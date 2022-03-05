@@ -17,6 +17,7 @@
           id="name_surname"
           name="name_surname"
           placeholder="Nombre"
+          required
         />
         <input
           class="name_surname"
@@ -24,22 +25,29 @@
           id="name_surname"
           name="name_surname"
           placeholder="Apellidos"
+          required
         />
         <label class="user_name" for="email">Nombre de usuario</label>
-        <input type="email" id="email" name="email" placeholder="@gmail.com" />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="@gmail.com"
+          required
+        />
         <label class="password" for="password">Contraseña</label>
-        <input type="password" id="password" name="password" />
+        <input type="password" id="password" name="password" required />
         <label class="confirm_password" for="confirm_password"
           >Confirma tu contraseña</label
         >
-        <input type="password" id="confirm_password" name="password" />
+        <input type="password" id="confirm_password" name="password" required />
         <!-- <label for="birth_date">Fecha de nacimiento</label> -->
 
         <label class="label_birth_date" for="birth_date"
           >Fecha de nacimiento</label
         >
         <div class="birth_date">
-          <select id="birth_date" name="birth_date" placeholder="Día">
+          <select id="birth_date" name="birth_date" placeholder="Día" required>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -73,7 +81,7 @@
             <option value="31">31</option>
           </select>
           <!-- <label for="month">Mes</label> -->
-          <select name="month" id="month" placeholder="Mes">
+          <select name="month" id="month" placeholder="Mes" required>
             <option value="January">Enero</option>
             <option value="February">Febrero</option>
             <option value="March">Marzo</option>
@@ -89,7 +97,13 @@
           </select>
           <!-- <label for="year">Año</label> -->
           <!-- <select name="year" id="year" placeholder="Año"> -->
-          <input type="number" id="year" placeholder="Año" max="2022" />
+          <input
+            type="number"
+            id="year"
+            placeholder="Año"
+            max="2022"
+            required
+          />
           <!-- </select> -->
         </div>
         <label class="sex" for="sex">Sexo</label>
@@ -98,13 +112,19 @@
           <option value="male">Hombre</option>
         </select>
         <label class="phone" for="phone">Teléfono móvil</label>
-        <input type="tel" id="phone" name="phone" />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[10-80]{2}"
+          required
+        />
         <label class="current_email" for="current_email"
           >Tu dirección de correo electrónico actual</label
         >
-        <input type="email" id="current_email" name="current_email" />
+        <input type="email" id="current_email" name="current_email" required />
         <label class="ubication" for="ubication">Ubicación</label>
-        <select name="ubication" id="ubication">
+        <select name="ubication" id="ubication" required>
           <option value="Spain">España</option>
           <option value="France">Francia</option>
           <option value="Italy">Italia</option>
