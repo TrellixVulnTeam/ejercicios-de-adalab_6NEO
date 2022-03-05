@@ -1,0 +1,56 @@
+.main {
+  padding: 20px;
+  width: 30vw;
+  height: 55vh;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+/* Error - Tengo que unificar todo a class items y darle las propiedades- */
+
+.label_name_surname {
+  display: block;
+}
+
+.name_surname {
+  display: inline;
+}
+
+.user_name {
+  display: block;
+}
+
+.password {
+  display: block;
+}
+
+.confirm_password {
+  display: block;
+}
+
+.label_birth_date {
+  display: block;
+}
+.birth_date {
+  display: inline-block;
+}
+
+.sex {
+  display: block;
+}
+
+.phone {
+  display: block;
+}
+
+.current_email {
+  display: block;
+}
+
+.ubication {
+  display: block;
+}
+
+.submit {
+  display: block;
+}

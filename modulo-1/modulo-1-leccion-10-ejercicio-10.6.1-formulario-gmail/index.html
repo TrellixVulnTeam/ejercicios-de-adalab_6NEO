@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Formulario de registro de Gmail</title>
+  </head>
+  <body>
+    <main class="main">
+      <form action="https://adalab-server-form.herokuapp.com/">
+        <label class="label_name_surname" for="name_surname">Nombre</label>
+        <input
+          class="name_surname"
+          type="text"
+          id="name_surname"
+          name="name_surname"
+          placeholder="Nombre"
+        />
+        <input
+          class="name_surname"
+          type="text"
+          id="name_surname"
+          name="name_surname"
+          placeholder="Apellidos"
+        />
+        <label class="user_name" for="email">Nombre de usuario</label>
+        <input type="email" id="email" name="email" placeholder="@gmail.com" />
+        <label class="password" for="password">Contraseña</label>
+        <input type="password" id="password" name="password" />
+        <label class="confirm_password" for="confirm_password"
+          >Confirma tu contraseña</label
+        >
+        <input type="password" id="confirm_password" name="password" />
+        <!-- <label for="birth_date">Fecha de nacimiento</label> -->
+
+        <label class="label_birth_date" for="birth_date"
+          >Fecha de nacimiento</label
+        >
+        <div class="birth_date">
+          <select id="birth_date" name="birth_date" placeholder="Día">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <!-- <label for="month">Mes</label> -->
+          <select name="month" id="month" placeholder="Mes">
+            <option value="January">Enero</option>
+            <option value="February">Febrero</option>
+            <option value="March">Marzo</option>
+            <option value="April">Abril</option>
+            <option value="May">Mayo</option>
+            <option value="June">Junio</option>
+            <option value="July">Julio</option>
+            <option value="August">Agosto</option>
+            <option value="September">Septiembre</option>
+            <option value="October">Octubre</option>
+            <option value="November">Noviembre</option>
+            <option value="December">Diciembre</option>
+          </select>
+          <!-- <label for="year">Año</label> -->
+          <!-- <select name="year" id="year" placeholder="Año"> -->
+          <input type="number" id="year" placeholder="Año" max="2022" />
+          <!-- </select> -->
+        </div>
+        <label class="sex" for="sex">Sexo</label>
+        <select name="sex" id="sex" placeholder="Selecciona tu género">
+          <option value="female">Mujer</option>
+          <option value="male">Hombre</option>
+        </select>
+        <label class="phone" for="phone">Teléfono móvil</label>
+        <input type="tel" id="phone" name="phone" />
+        <label class="current_email" for="current_email"
+          >Tu dirección de correo electrónico actual</label
+        >
+        <input type="email" id="current_email" name="current_email" />
+        <label class="ubication" for="ubication">Ubicación</label>
+        <select name="ubication" id="ubication">
+          <option value="Spain">España</option>
+          <option value="France">Francia</option>
+          <option value="Italy">Italia</option>
+          <option value="Germany">Alemania</option>
+          <option value="United States">Estados Unidos</option>
+          <option value="United Kingdom">Inglaterra</option>
+        </select>
+        <input class="submit" type="submit" value="Siguiente paso" />
+      </form>
+    </main>
+  </body>
+</html>
