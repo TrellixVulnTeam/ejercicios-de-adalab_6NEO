@@ -1,0 +1,30 @@
+.form {
+  border: 1px solid black;
+  width: 40vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.name,
+.surname {
+  width: 48%;
+}
+.name_sur {
+  display: inline;
+  justify-content: center;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.birthday {
+  display: flex;
+  width: 100%;
+}
+
+/* .date_birth {
+  display: flex;
+  flex-direction: column;
+} */
