@@ -1,40 +1,32 @@
 body {
   margin: 0;
 }
-.wrapper {
+.container_fluid {
   height: 100vh;
   display: grid;
   grid-template-columns: 12;
   grid-template-rows: 20% 60% 20%;
 }
-.item {
+/*No se me dan puesto anchas las rows*/
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header {
-  grid-column: span 12;
+  grid-column: 12;
   background-color: pink;
   color: white;
-  text-transform: uppercase;
 }
-
 .menu {
-  grid-column: span 4;
-  background-color: blueviolet;
+  background-color: purple;
   color: white;
-  text-transform: uppercase;
 }
 .content {
-  grid-column: span 8;
   background-color: red;
   color: white;
-  text-transform: uppercase;
 }
-
 .footer {
-  grid-column: span 12;
   background-color: lightblue;
   color: white;
-  text-transform: uppercase;
 }
