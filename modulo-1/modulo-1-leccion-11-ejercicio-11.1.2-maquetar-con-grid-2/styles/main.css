@@ -21,14 +21,12 @@ body {
 
 .item2 {
   grid-column: span 4;
-
   background-color: blueviolet;
   color: white;
   text-transform: uppercase;
 }
 .item3 {
   grid-column: span 8;
-
   background-color: red;
   color: white;
   text-transform: uppercase;
