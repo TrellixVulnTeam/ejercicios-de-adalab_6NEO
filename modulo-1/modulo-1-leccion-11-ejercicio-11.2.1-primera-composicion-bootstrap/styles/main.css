@@ -7,26 +7,27 @@ body {
   grid-template-columns: 12;
   grid-template-rows: 20% 60% 20%;
 }
-/*No se me dan puesto anchas las rows*/
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .header {
   grid-column: 12;
   background-color: pink;
-  color: white;
 }
 .menu {
   background-color: purple;
-  color: white;
 }
 .content {
   background-color: red;
-  color: white;
 }
 .footer {
   background-color: lightblue;
-  color: white;
+}
+.menu,
+.content,
+.header,
+.footer {
+  color: bisque;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
