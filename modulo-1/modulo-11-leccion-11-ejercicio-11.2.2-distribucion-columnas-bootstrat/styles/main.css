@@ -1,11 +1,7 @@
-.container-sm {
-  width: 100vw;
+.row {
+  margin-bottom: 10px;
 }
-.g-col-sm-1 {
+.box {
   background-color: aqua;
-  height: 40px;
-}
-
-.col-sm-1 {
-  background-color: aquamarine;
+  height: 20px;
 }
