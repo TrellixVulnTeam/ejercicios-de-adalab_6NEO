@@ -18,17 +18,17 @@
   color: blueviolet;
   box-shadow: 8px rgba(0, 0, 0, 0, 5);
   box-sizing: border-box;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  top: -400px;
+  align-items: center; */
+  position: absolute;
   transition: drop 1s ease;
 }
 .window:hover {
-  top: -400px;
-  transform: translateY(700px);
+  top: -100px;
+  transition: position ease 5s;
 }
-@keyframes drop {
+/* @keyframes drop {
   0% {
     opacity: 0;
   }
@@ -38,7 +38,7 @@
   100% {
     transform: translateY(650px);
   }
-}
+} */
 
 /* 
 /* #popup.show {
