@@ -3,6 +3,30 @@
 }
 .box {
   width: 100%;
-  height: 100%;
-  background-image: "https://www.hoyesarte.com/wp-content/uploads/2021/09/maxresdefault.jpg";
+  height: 100vh;
+  background-image: url("https://www.hoyesarte.com/wp-content/uploads/2021/09/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.text {
+  font-size: 20px;
+  color: gray;
+  animation-name: text;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes text {
+  from {
+    opacity: 0;
+    transform: translateY(0, -550px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0, 500px);
+  }
 }
