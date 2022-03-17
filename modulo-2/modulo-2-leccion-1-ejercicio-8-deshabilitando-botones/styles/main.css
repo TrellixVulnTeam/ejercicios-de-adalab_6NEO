@@ -1,0 +1,8 @@
+.button-a,
+.button-b {
+  height: 8px;
+  padding: 40px;
+  border: 1px solid blue;
+  color: black;
+  background-color: orange;
+}
