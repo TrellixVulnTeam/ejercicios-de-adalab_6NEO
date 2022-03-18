@@ -6,4 +6,4 @@ console.log("El nombre de mi compañera es" + name.lenth + "y está compuesto po
 
 //No me suma los caracteres del nombre en la consola
 
-//Ha que meter parseIn para que convierta un string a numeros
+//Ha que meter "parseIn" para que convierta un string a numeros
