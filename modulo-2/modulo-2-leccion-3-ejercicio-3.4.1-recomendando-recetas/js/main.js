@@ -9,3 +9,5 @@ if (ingredient === "Merluza") {
 } else if (ingredient === "Espinacas") {
     console.log("Espinacas rehogadas");
 }
+
+//Se pinta el en la consola: Prepara un pollo al curry
