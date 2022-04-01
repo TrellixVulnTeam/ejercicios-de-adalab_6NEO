@@ -1,6 +1,6 @@
 'use strict';
 
-
+ const resultInteger = document.querySelector('.js-result');
 // function getEmoji() {
 //   fetch('https://api.rand.fun/games/rockpaperscissorslizardspock')
 //     .then((response) => response.json())
@@ -14,7 +14,7 @@ function integer() {
     fetch('https://api.rand.fun/number/integer')
     .then((response) => response.json())
     .then((data) => {
-        document.querySelector('.js_result').innerHTML = data.result;
+        resultInteger.innerHTML = data.result;
     });
 }
 document.querySelector('.js_integer').addEventListener('click', integer);
