@@ -2,16 +2,24 @@
 
 const inputElement = document.querySelector('.js_input');
 const btn = document.querySelector('.js_button');
+const resultElement = document.querySelector('#result');
 
 function handleClikBtn() {
-    fetch('https://api.github.com/orgs/Adalab')
+  let input = inputElement.value;
+  fetch(`https://api.github.com/orgs/${input}`)
     .then((response) => response.json())
     .then((data) => {
-        let i = inputElement.value;
-        i = data.message;
+      return fetch(data.repos_url);
     })
+    .then((response) => response.json())
+    .then((data) => {
+      let list = '';
+      for (const element of data) {
+        list += `<li>${element.name}</li>`;
+      }
+      resultElement.innerHTML = list;
+    });
 }
-
 
 btn.addEventListener('click', handleClikBtn);
 

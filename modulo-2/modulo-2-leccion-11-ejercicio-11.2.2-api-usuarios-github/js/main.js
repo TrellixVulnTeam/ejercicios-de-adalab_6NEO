@@ -3,14 +3,18 @@
 
 const btn = document.querySelector('.js_button');
 const inputElement = document.querySelector('.js_input');
-
+const nameElement = document.getElementById('name');
+const photoElement = document.getElementById('photo');
+const reposElement = document.getElementById('repos');
 
 function handleClickBtnLookFor() {
-    fetch('https://api.github.com/users/{username}')
+    let username = inputElement.value;
+    fetch(`https://api.github.com/users/${username}`)
     .then((response) => response.json())
     .then((data) => {
-       const username = inputElement.value;
-       username = data.result;
+        nameElement.innerHTML = data.name;
+        photoElement.src = data.avatar_url;
+        reposElement.innerHTML = data.public_repos;
     });
 }
 
