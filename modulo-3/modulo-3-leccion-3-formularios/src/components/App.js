@@ -34,6 +34,12 @@ const App = () => {
     setGiftWrap(ev.target.checked);
   };
 
+  const handleResetGiftWrap = () => {
+    // Al resetear indicamos que la usuaria no lo quiere envuelto para regalo
+    setGiftWrap(false);
+    // Si más arriba hubiéramos puesto useState(true), aquí deberíamos poner setGiftWrapper(true)
+  };
+
   const handleSubmit = (ev) => {
     // Aquí detenemos el envío del formulario
     ev.preventDefault();
@@ -81,9 +87,13 @@ const App = () => {
             type="checkbox"
             name="gitWrap"
             id="gitWrap"
+            //En el caso de ponerlo como un booleando (true/false) en la constante de estado, aqui le ponemos el checked
+            checked={giftWrap}
             onChange={handleGiftWrap}
           />
-
+          <button onClick={handleResetGiftWrap}>
+            Resetear la opción de envolverlo
+          </button>
           {/* Usamos la constante giftWrap para pintarla en el HTML */}
           <p>
             {giftWrap === true ? 'Sí' : 'No'} te lo envolveremos para regalo
