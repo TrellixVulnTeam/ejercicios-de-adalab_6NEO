@@ -24,9 +24,9 @@ function App() {
     // if (task === true) {
     //   tasks.add(done);
     // }
-    return tasks.map((tasks) => {
+    return tasks.map((tasks, index) => {
       return (
-        <li key={tasks.index} id={tasks.id} onClick={handleTasks}>
+        <li key={index} id={tasks.id} onClick={handleTasks}>
           <span>{tasks.task}</span>
         </li>
       );
