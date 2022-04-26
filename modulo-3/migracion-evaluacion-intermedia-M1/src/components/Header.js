@@ -21,17 +21,16 @@ const Header = () => {
       </section>
       <nav>
         <ul className="buttons">
-          <Link text="Blog" href="https://adalab.es/blog/" />
-          <li>
-            <a
-              className="main_button"
-              href="https://adalab.es/contacto/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Contacto
-            </a>
-          </li>
+          <Link
+            text="Blog"
+            href="https://adalab.es/blog/"
+            className="main_button_blog"
+          />
+          <Link
+            text="Contacto"
+            href="https://adalab.es/contacto/"
+            className="main_button_contact"
+          />
         </ul>
       </nav>
     </header>

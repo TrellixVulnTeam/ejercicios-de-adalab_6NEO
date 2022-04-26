@@ -4,8 +4,8 @@ const Link = (props) => {
   return (
     <li>
       <a
-        className="main_button_blog"
-        href="https://adalab.es/blog/"
+        className={props.className}
+        href={props.href}
         target="_blank"
         rel="noreferrer"
       >
