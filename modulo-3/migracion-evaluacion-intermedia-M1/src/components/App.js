@@ -1,4 +1,6 @@
 import '../styles/App.scss';
+import Header from './Header';
+import Main from './Main';
 // import callToApi from '../services/api';
 // import { useEffect, useState } from 'react';
 // import ls from '../services/localStorage';
@@ -6,7 +8,8 @@ import '../styles/App.scss';
 function App() {
   return (
     <div>
-      <h1>Hola mundo</h1>
+      <Header />
+      <Main />
     </div>
   );
 }
