@@ -1,3 +1,6 @@
+import '../styles/Main.scss';
+import '../styles/App.scss';
+
 const Main = () => {
   return (
     <main className="main">

@@ -1,4 +1,6 @@
 import logo from '../images/adalab-logo-155x61.png';
+import Link from './Link';
+import '../styles/Header.scss';
 
 const Header = () => {
   return (
@@ -19,16 +21,7 @@ const Header = () => {
       </section>
       <nav>
         <ul className="buttons">
-          <li>
-            <a
-              className="main_button_blog"
-              href="https://adalab.es/blog/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Blog
-            </a>
-          </li>
+          <Link text="Blog" href="https://adalab.es/blog/" />
           <li>
             <a
               className="main_button"
