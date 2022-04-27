@@ -1,5 +1,8 @@
 // Fichero src/components/App.js
 import { useState } from 'react';
+import InputGroupSelect from './InputGroupSelect';
+import InputGroupText from './InputGroupText';
+import Preview from './Preview';
 
 const App = () => {
   // Estados del componente
@@ -10,15 +13,16 @@ const App = () => {
   const [legalTerms, setLegalTerms] = useState(false);
 
   // Eventos
-  const handleName = (ev) => {
-    setName(ev.target.value);
+  const handleChange = (ev) => {
+    setName({ [ev.target.id]: ev.target.value });
+    setEmail({ [ev.target.id]: ev.target.value });
   };
 
-  const handleEmail = (ev) => {
-    setEmail(ev.target.value);
-  };
+  // const handleEmail = (ev) => {
+  //   setEmail(ev.target.value);
+  // };
 
-  const handleRegion = (ev) => {
+  const handleSelectRegion = (ev) => {
     setRegion(ev.target.value);
   };
 
@@ -45,17 +49,6 @@ const App = () => {
     console.log('Enviando datos al servidor...');
   };
 
-  // Funciones que nos ayudan a renderizar
-  const renderPaymentTypeText = () => {
-    if (paymentType === 'creditCard') {
-      return 'Tarjeta de crédito';
-    } else if (paymentType === 'cash') {
-      return 'Efectivo';
-    } else if (paymentType === 'cashOnDelivery') {
-      return 'Contra reembolso';
-    }
-  };
-
   const isValidForm = () => {
     // El formulario solo es válido cuando los inputs de tipo texto no estén vacíos, cuando se haya marcado un tipo de pago y cuando los términos legales sean true
     // También podríamos comprobar que el email tiene el formato correcto, pero no queremos complicar este ejemplo
@@ -77,23 +70,22 @@ const App = () => {
         <h2>Rellena tus datos para finalizar la compra:</h2>
         <div className="form">
           {/* name */}
-          <div className="input-group-text">
-            <label className="label-text" htmlFor="name">
-              Escribe un nombre:
-            </label>
-            <input
-              className="input-text"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="María García"
-              value={name}
-              onChange={handleName}
-            />
-          </div>
-
+          <InputGroupText
+            handleChange={handleChange}
+            title="Escribe tu nombre:"
+            placeholder="María García"
+            id="name"
+            value={name.value}
+          />
+          <InputGroupText
+            handleChange={handleChange}
+            title="Escribe un email:"
+            placeholder="mariagarcia@gmail.com"
+            id="email"
+            value=""
+          />
           {/* email */}
-          <div className="input-group-text">
+          {/* <div className="input-group-text">
             <label className="label-text" htmlFor="email">
               Escribe un email:
             </label>
@@ -106,27 +98,10 @@ const App = () => {
               value={email}
               onChange={handleEmail}
             />
-          </div>
+          </div> */}
 
           {/* region */}
-          <div className="input-group-select">
-            <label className="label-text" htmlFor="region">
-              Indica tu región:
-            </label>
-            <select
-              className="input-select"
-              name="region"
-              id="region"
-              value={region}
-              onChange={handleRegion}
-            >
-              <option>España peninsular</option>
-              <option>Islas Canarias</option>
-              <option>Islas Baleares</option>
-              <option>Ceuta</option>
-              <option>Melilla</option>
-            </select>
-          </div>
+          <InputGroupSelect handleSelectRegion={handleSelectRegion} />
 
           {/* payment type */}
           <label className="label-text">Indica tu método de pago:</label>
@@ -191,20 +166,13 @@ const App = () => {
             />
           </div>
         </div>
-
-        <div className="preview">
-          <h2>Tus datos son:</h2>
-          <ul>
-            <li>Nombre: {name}</li>
-            <li>Email: {email}</li>
-            <li>Región: {region}</li>
-            <li>Método de pago: {renderPaymentTypeText()}</li>
-            <li>
-              Has aceptado nuestros términos legales:{' '}
-              {legalTerms === true ? 'Sí' : 'No'}
-            </li>
-          </ul>
-        </div>
+        <Preview
+          name={name}
+          email={email}
+          region={region}
+          legalTerms={legalTerms}
+          paymentType={paymentType}
+        />
 
         {/* reset */}
         {/* Este botón debe estar inhabilitado mientras el formulario no sea válido */}
