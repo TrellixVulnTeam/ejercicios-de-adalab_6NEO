@@ -8,6 +8,7 @@ function User(props) {
       />
       <h4 className="card__title">{props.user.fullName}</h4>
       <p className="card__description">{props.user.age}</p>
+      <p>{props.user.city}</p>
     </a>
   );
 }

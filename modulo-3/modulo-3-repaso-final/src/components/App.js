@@ -7,7 +7,7 @@ function App() {
   const [dataUsers, setDataUsers] = useState([]);
   const [filterCountry, setFilterCountry] = useState('');
   const [filterName, setFilterName] = useState('');
-  //const [filterCity, setFilterCity] = useState('');
+  const [filterCity, setFilterCity] = useState('');
 
   useEffect(() => {
     getApiData().then((dataFromApi) => {
@@ -24,9 +24,9 @@ function App() {
     setFilterName(value);
   };
 
-  // const handleFilterCity = (value) => {
-  //   setFilterCity(value);
-  // };
+  const handleFilterCity = (value) => {
+    setFilterCity(value);
+  };
 
   const userFilters = dataUsers
     .filter((user) => {
@@ -34,10 +34,10 @@ function App() {
     })
     .filter((user) =>
       user.fullName.toLowerCase().includes(filterName.toLocaleLowerCase())
-    );
-  // .filter((user) => {
-  //   return user.city === filterCity;
-  // });
+    )
+    .filter((user) => {
+      return user.city.includes(filterCity);
+    });
 
   return (
     <>
@@ -46,7 +46,7 @@ function App() {
         <Filters
           handleFilterCountry={handleFilterCountry}
           handleFilterName={handleFilterName}
-          //handleFilterCity={handleFilterCity}
+          handleFilterCity={handleFilterCity}
         />
         <UserList users={userFilters} />
       </div>

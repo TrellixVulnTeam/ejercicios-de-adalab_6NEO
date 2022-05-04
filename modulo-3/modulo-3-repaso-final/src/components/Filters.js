@@ -1,6 +1,6 @@
 import FilterCountry from './FilterCountry';
 import FilterName from './FilterName';
-//import FilterCity from './FilterCity';
+import FilterCity from './FilterCity';
 
 function Filters(props) {
   return (
@@ -8,8 +8,10 @@ function Filters(props) {
       <form>
         <FilterCountry handleFilterCountry={props.handleFilterCountry} />
         <FilterName handleFilterName={props.handleFilterName} />
-        {/* <FilterCity handleFilterCity={props.handleFilterCity} /> */}
-        {/*<FilterCity />*/}
+        <FilterCity
+          handleFilterCity={props.handleFilterCity}
+          city={props.city}
+        />
       </form>
     </section>
   );
