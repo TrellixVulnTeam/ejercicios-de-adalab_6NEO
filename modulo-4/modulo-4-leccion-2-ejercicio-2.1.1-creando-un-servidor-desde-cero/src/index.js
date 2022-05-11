@@ -13,7 +13,7 @@ server.listen(serverPort, () => {
 
 server.get('/users', (req, res) => {
   const response = {
-    users: [{ name: 'Sofía' }, { name: 'María' }],
+    users: [{ name: 'Sofía' }, { name: 'Mari Carmen' }],
   };
   res.json(response);
 });
