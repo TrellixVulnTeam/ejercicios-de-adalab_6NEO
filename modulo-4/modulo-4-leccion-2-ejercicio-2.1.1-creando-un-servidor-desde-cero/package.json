@@ -1,0 +1,15 @@
+{
+  "name": "modulo-4-leccion-2-ejercicio-2.1.1-creando-un-servidor-desde-cero",
+  "version": "1.0.0",
+  "description": "creando un servidor desde cero con express js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sandra",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
